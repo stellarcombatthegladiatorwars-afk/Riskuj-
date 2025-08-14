@@ -18,7 +18,7 @@
   { "id": "h400-17", "category": "Historie", "q": "Kdy byla objevena Amerika Kryštofem Kolumbem?", "a": "1492" },
   { "id": "h400-18", "category": "Historie", "q": "Jak se jmenoval první císař sjednocené Číny?", "a": "Čchin Š’-chuang-ti" },
   { "id": "h400-19", "category": "Historie", "q": "Kdy proběhla sametová revoluce v Československu?", "a": "1989" },
-  { "id": "h400-20", "category": "Historie", "q": "Jak se nazývá slavná loď, která ztroskotala v roce 1912 na své první plavbě?", "a": "Titanic" }
+  { "id": "h400-20", "category": "Historie", "q": "Jak se nazývá slavná loď, která ztroskotala v roce 1912 na své první plavbě?", "a": "Titanic" },
   { "id": "h400-21", "category": "Historie", "q": "Které město bylo korunovačním městem českých králů?", "a": "Praha" },
   { "id": "h400-22", "category": "Historie", "q": "Kdo vedl české povstání roku 1618 jako jeden z direktorů a byl popraven na Staroměstském náměstí?", "a": "Např. Jiří Jesenius (mezi 27 pány)" },
   { "id": "h400-23", "category": "Historie", "q": "Který panovník založil Karlovu univerzitu?", "a": "Karel IV." },
@@ -42,7 +42,7 @@
   { "id": "v400-17", "category": "Věda", "q": "Který plyn tvoří většinu atmosféry Země?", "a": "Dusík" },
   { "id": "v400-18", "category": "Věda", "q": "Jaký je proces přeměny kapaliny na plyn?", "a": "Vypařování" },
   { "id": "v400-19", "category": "Věda", "q": "Jak se nazývá nejmenší jednotka života?", "a": "Buňka" },
-  { "id": "v400-20", "category": "Věda", "q": "Kdo objevil penicilin?", "a": "Alexander Fleming" }
+  { "id": "v400-20", "category": "Věda", "q": "Kdo objevil penicilin?", "a": "Alexander Fleming" },
   { "id": "v400-21", "category": "Věda", "q": "Která fyzikální veličina se měří v pascalech (Pa)?", "a": "Tlak" },
   { "id": "v400-22", "category": "Věda", "q": "Jak se nazývá proces přeměny kapaliny v plyn při teplotě varu?", "a": "Var" },
   { "id": "v400-23", "category": "Věda", "q": "Co je mitochondrie?", "a": "Buněčná organela, „elektrárna“ buňky" },
