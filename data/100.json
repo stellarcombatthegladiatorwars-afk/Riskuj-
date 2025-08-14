@@ -106,27 +106,27 @@
   { "id": "m100-19", "category": "Hudba", "q": "Jak se jmenuje český festival, který se koná v Trutnově a je známý jako „český Woodstock“?", "a": "Trutnoff" },
   { "id": "m100-20", "category": "Hudba", "q": "Jaký je název tradičního japonského strunného nástroje se třemi strunami?", "a": "Šamisen" },
 
-  { "id": "f100-1", "category": "Film", "q": "Kdo hrál hlavní roli ve filmu 'Titanic' jako Jack Dawson?", "a": "Leonardo DiCaprio" },
-  { "id": "f100-2", "category": "Film", "q": "Která herečka ztvárnila postavu Hermiony Grangerové ve filmech o Harrym Potterovi?", "a": "Emma Watson" },
-  { "id": "f100-3", "category": "Film", "q": "Kdo režíroval film 'Jurský park' (1993)?", "a": "Steven Spielberg" },
-  { "id": "f100-4", "category": "Film", "q": "Jak se jmenuje snímek o lvu Simbovi?", "a": "Lví král" },
-  { "id": "f100-5", "category": "Film", "q": "Kdo ztvárnil roli Jacka Sparrowa ve filmech 'Piráti z Karibiku'?", "a": "Johnny Depp" },
-  { "id": "f100-6", "category": "Film", "q": "Který superhrdina nosí červený plášť a znak 'S' na hrudi?", "a": "Superman" },
-  { "id": "f100-7", "category": "Film", "q": "Jaký je název filmu, kde se objevuje kouzelnická škola Bradavice?", "a": "Harry Potter" },
-  { "id": "f100-8", "category": "Film", "q": "Jak se jmenuje modrý animovaný tvor z filmu Jamese Camerona?", "a": "Avatar" },
-  { "id": "f100-9", "category": "Film", "q": "Kdo hraje hlavní roli v sérii filmů 'Mission: Impossible'?", "a": "Tom Cruise" },
-  { "id": "f100-10", "category": "Film", "q": "Jaký je název filmu, kde se objevuje robot WALL-E?", "a": "WALL-E" },
-  { "id": "f100-11", "category": "Film", "q": "Která postava říká větu 'May the Force be with you'?", "a": "Postavy z Hvězdných válek" },
-  { "id": "f100-12", "category": "Film", "q": "Kdo hraje roli Batmana ve filmu 'Temný rytíř' (2008)?", "a": "Christian Bale" },
-  { "id": "f100-13", "category": "Film", "q": "Jak se jmenuje ledová princezna z Disney filmu?", "a": "Elsa" },
-  { "id": "f100-14", "category": "Film", "q": "Jak se jmenuje série filmů o kouzelnické praxi v Novém Zélandu a Británii od Rowlingové?", "a": "Fantastická zvířata" },
-  { "id": "f100-15", "category": "Film", "q": "Jaký je název filmu o modrých šmoulinkách?", "a": "Šmoulové" },
-  { "id": "f100-16", "category": "Film", "q": "Jak se jmenuje příběh o hračkách Woodym a Buzzem?", "a": "Příběh hraček" },
-  { "id": "f100-17", "category": "Film", "q": "Který herec hraje Thora v MCU?", "a": "Chris Hemsworth" },
-  { "id": "f100-18", "category": "Film", "q": "Jak se jmenuje panda z animovaného filmu o kung-fu?", "a": "Po" },
-  { "id": "f100-19", "category": "Film", "q": "Jak se jmenuje zmrzlý sněhulák z Ledového království?", "a": "Olaf" },
-  { "id": "f100-20", "category": "Film", "q": "Kdo hrál hlavní roli ve filmu 'Forrest Gump'?", "a": "Tom Hanks" }
-
+  { "id": "f100-1", "category": "Filmy", "q": "Kdo hrál hlavní roli ve filmu 'Titanic' jako Jack Dawson?", "a": "Leonardo DiCaprio" },
+  { "id": "f100-2", "category": "Filmy", "q": "Která herečka ztvárnila postavu Hermiony Grangerové ve filmech o Harrym Potterovi?", "a": "Emma Watson" },
+  { "id": "f100-3", "category": "Filmy", "q": "Kdo režíroval film 'Jurský park' (1993)?", "a": "Steven Spielberg" },
+  { "id": "f100-4", "category": "Filmy", "q": "Jak se jmenuje snímek o lvu Simbovi?", "a": "Lví král" },
+  { "id": "f100-5", "category": "Filmy", "q": "Kdo ztvárnil roli Jacka Sparrowa ve filmech 'Piráti z Karibiku'?", "a": "Johnny Depp" },
+  { "id": "f100-6", "category": "Filmy", "q": "Který superhrdina nosí červený plášť a znak 'S' na hrudi?", "a": "Superman" },
+  { "id": "f100-7", "category": "Filmy", "q": "Jaký je název filmu, kde se objevuje kouzelnická škola Bradavice?", "a": "Harry Potter" },
+  { "id": "f100-8", "category": "Filmy", "q": "Jak se jmenuje modrý animovaný tvor z filmu Jamese Camerona?", "a": "Avatar" },
+  { "id": "f100-9", "category": "Filmy", "q": "Kdo hraje hlavní roli v sérii filmů 'Mission: Impossible'?", "a": "Tom Cruise" },
+  { "id": "f100-10", "category": "Filmy", "q": "Jaký je název filmu, kde se objevuje robot WALL-E?", "a": "WALL-E" },
+  { "id": "f100-11", "category": "Filmy", "q": "Která postava říká větu 'May the Force be with you'?", "a": "Postavy z Hvězdných válek" },
+  { "id": "f100-12", "category": "Filmy", "q": "Kdo hraje roli Batmana ve filmu 'Temný rytíř' (2008)?", "a": "Christian Bale" },
+  { "id": "f100-13", "category": "Filmy", "q": "Jak se jmenuje ledová princezna z Disney filmu?", "a": "Elsa" },
+  { "id": "f100-14", "category": "Filmy", "q": "Jak se jmenuje série filmů o kouzelnické praxi v Novém Zélandu a Británii od Rowlingové?", "a": "Fantastická zvířata" },
+  { "id": "f100-15", "category": "Filmy", "q": "Jaký je název filmu o modrých šmoulinkách?", "a": "Šmoulové" },
+  { "id": "f100-16", "category": "Filmy", "q": "Jak se jmenuje příběh o hračkách Woodym a Buzzem?", "a": "Příběh hraček" },
+  { "id": "f100-17", "category": "Filmy", "q": "Který herec hraje Thora v MCU?", "a": "Chris Hemsworth" },
+  { "id": "f100-18", "category": "Filmy", "q": "Jak se jmenuje panda z animovaného filmu o kung-fu?", "a": "Po" },
+  { "id": "f100-19", "category": "Filmy", "q": "Jak se jmenuje zmrzlý sněhulák z Ledového království?", "a": "Olaf" },
+  { "id": "f100-20", "category": "Filmy", "q": "Kdo hrál hlavní roli ve filmu 'Forrest Gump'?", "a": "Tom Hanks" }
 ]
+
 
 
