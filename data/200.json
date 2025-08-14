@@ -18,7 +18,7 @@
   { "id": "h200-17", "category": "Historie", "q": "Jak se jmenovala berlínská stavba, která dělila město od roku 1961 do roku 1989?", "a": "Berlínská zeď" },
   { "id": "h200-18", "category": "Historie", "q": "Jak se jmenoval první český kosmonaut?", "a": "Vladimír Remek" },
   { "id": "h200-19", "category": "Historie", "q": "Kdo vedl občanská práva a byl znám pro svůj projev ‚Mám sen‘?", "a": "Martin Luther King Jr." },
-  { "id": "h200-20", "category": "Historie", "q": "Který český panovník byl posledním korunovaným českým králem?", "a": "Ferdinand V. Dobrotivý" }
+  { "id": "h200-20", "category": "Historie", "q": "Který český panovník byl posledním korunovaným českým králem?", "a": "Ferdinand V. Dobrotivý" },
   { "id": "h200-21", "category": "Historie", "q": "V kterém roce proběhla bitva na Bílé hoře?", "a": "1620" },
   { "id": "h200-22", "category": "Historie", "q": "Kdo byl prvním československým prezidentem?", "a": "Tomáš Garrigue Masaryk" },
   { "id": "h200-23", "category": "Historie", "q": "Jak se jmenoval poslední český král z rodu Přemyslovců?", "a": "Václav III." },
@@ -42,7 +42,7 @@
   { "id": "v200-17", "category": "Věda", "q": "Který sval je největší v lidském těle?", "a": "Sval hýžďový (gluteus maximus)" },
   { "id": "v200-18", "category": "Věda", "q": "Jak se jmenuje přístroj pro měření teploty?", "a": "Teploměr" },
   { "id": "v200-19", "category": "Věda", "q": "Jaký je název nejtvrdší přírodní látky na Zemi?", "a": "Diamant" },
-  { "id": "v200-20", "category": "Věda", "q": "Která planeta sluneční soustavy je nejblíže ke Slunci?", "a": "Merkur" }
+  { "id": "v200-20", "category": "Věda", "q": "Která planeta sluneční soustavy je nejblíže ke Slunci?", "a": "Merkur" },
   { "id": "v200-21", "category": "Věda", "q": "Jednotka elektrického proudu?", "a": "Ampér" },
   { "id": "v200-22", "category": "Věda", "q": "Jaké je chemické značení kuchyňské soli?", "a": "NaCl" },
   { "id": "v200-23", "category": "Věda", "q": "Který plyn dýcháme jako hlavní složku vzduchu?", "a": "Dusík" },
@@ -66,7 +66,7 @@
   { "id": "l200-17", "category": "Literatura", "q": "Kdo napsal dobrodružný román „Ostrov pokladů“?", "a": "Robert Louis Stevenson" },
   { "id": "l200-18", "category": "Literatura", "q": "Kdo je autorem románu „Anna Kareninová“?", "a": "Lev Nikolajevič Tolstoj" },
   { "id": "l200-19", "category": "Literatura", "q": "Jak se jmenuje hlavní postava románu „Máj“?", "a": "Vilém" },
-  { "id": "l200-20", "category": "Literatura", "q": "Jaký český básník je autorem sbírky „Torzo naděje“?", "a": "František Halas" }
+  { "id": "l200-20", "category": "Literatura", "q": "Jaký český básník je autorem sbírky „Torzo naděje“?", "a": "František Halas" },
   { "id": "l200-21", "category": "Literatura", "q": "Kdo napsal „RUR“?", "a": "Karel Čapek" },
   { "id": "l200-22", "category": "Literatura", "q": "Autor románu „1984“?", "a": "George Orwell" },
   { "id": "l200-23", "category": "Literatura", "q": "Který český spisovatel je autorem „Osudů dobrého vojáka Švejka“?", "a": "Jaroslav Hašek" },
@@ -90,7 +90,7 @@
   { "id": "z200-17", "category": "Zeměpis", "q": "Jak se jmenuje hora na hranicích Nepálu a Číny známá jako druhá nejvyšší na světě?", "a": "K2" },
   { "id": "z200-18", "category": "Zeměpis", "q": "Jaký stát leží mezi Kanadou a Mexikem?", "a": "Spojené státy americké" },
   { "id": "z200-19", "category": "Zeměpis", "q": "Které hlavní město leží na řece Temži?", "a": "Londýn" },
-  { "id": "z200-20", "category": "Zeměpis", "q": "Jaké je hlavní město Norska?", "a": "Oslo" }
+  { "id": "z200-20", "category": "Zeměpis", "q": "Jaké je hlavní město Norska?", "a": "Oslo" },
   { "id": "z200-21", "category": "Zeměpis", "q": "Nejvyšší hora světa?", "a": "Mount Everest" },
   { "id": "z200-22", "category": "Zeměpis", "q": "Řeka protékající Paříží?", "a": "Seina" },
   { "id": "z200-23", "category": "Zeměpis", "q": "Jaké je hlavní město Rakouska?", "a": "Vídeň" },
@@ -114,7 +114,7 @@
   { "id": "m200-17", "category": "Hudba", "q": "Jak se jmenuje hudební nástroj, na který se hraje smyčcem a má čtyři struny, laděné o oktávu níž než housle?", "a": "Viola" },
   { "id": "m200-18", "category": "Hudba", "q": "Jak se jmenuje česká kapela, jejímž frontmanem je Jaromír Švejdík a která proslula písní „Půlnoční“?", "a": "Umakart" },
   { "id": "m200-19", "category": "Hudba", "q": "Jak se jmenuje americký skladatel filmové hudby, autor hudby k „Star Wars“ a „Harry Potterovi“?", "a": "John Williams" },
-  { "id": "m200-20", "category": "Hudba", "q": "Jaký hudební styl je spojen s kapelou Metallica?", "a": "Heavy metal" }
+  { "id": "m200-20", "category": "Hudba", "q": "Jaký hudební styl je spojen s kapelou Metallica?", "a": "Heavy metal" },
   { "id": "m200-21", "category": "Hudba", "q": "Autor opery „Rusalka“?", "a": "Antonín Dvořák" },
   { "id": "m200-22", "category": "Hudba", "q": "Kdo je přezdíván „král popu“?", "a": "Michael Jackson" },
   { "id": "m200-23", "category": "Hudba", "q": "Jaký hudební nástroj má struny a hraje se smyčcem (v orchestru nejmenší)?", "a": "Housle" },
@@ -138,12 +138,12 @@
   { "id": "f200-17", "category": "Filmy", "q": "Který animovaný film vypráví příběh o rodině superhrdinů?", "a": "Úžasňákovi" },
   { "id": "f200-18", "category": "Filmy", "q": "Jak se jmenuje princezna z 'Hvězdných válek'?", "a": "Leia Organa" },
   { "id": "f200-19", "category": "Filmy", "q": "Kdo hrál roli Jamese Bonda ve filmu 'Skyfall'?", "a": "Daniel Craig" },
-  { "id": "f200-20", "category": "Filmy", "q": "Jak se jmenuje slavný italský film o malém chlapci a kině?", "a": "Bio Ráj (Cinema Paradiso)" }
+  { "id": "f200-20", "category": "Filmy", "q": "Jak se jmenuje slavný italský film o malém chlapci a kině?", "a": "Bio Ráj (Cinema Paradiso)" },
   { "id": "f200-21", "category": "Filmy", "q": "Který český režisér natočil film „Amadeus“?", "a": "Miloš Forman" },
   { "id": "f200-22", "category": "Filmy", "q": "Oscarem oceněný film Miloše Formana z roku 1975?", "a": "Přelet nad kukaččím hnízdem" },
   { "id": "f200-23", "category": "Filmy", "q": "Jak se jmenuje čaroděj z filmové série o Harrym Potterovi, ředitel Bradavic?", "a": "Albus Brumbál (Dumbledore)" }
-
 ]
+
 
 
 
