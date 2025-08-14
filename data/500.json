@@ -119,26 +119,30 @@
   { "id": "m500-22", "category": "Hudba", "q": "Kdo složil operu „Tosca“?", "a": "Giacomo Puccini" },
   { "id": "m500-23", "category": "Hudba", "q": "Kdo složil skladbu „Moldau“?", "a": "Bedřich Smetana" }
 
-  { "id": "s500-4", "category": "Sport", "q": "Kdo vyhrál nejvíce titulů mistra světa ve Formuli 1?", "a": "Lewis Hamilton a Michael Schumacher (oba 7)" },
-  { "id": "s500-5", "category": "Sport", "q": "Který fotbalista vstřelil nejvíce gólů v historii mistrovství světa?", "a": "Miroslav Klose" },
-  { "id": "s500-6", "category": "Sport", "q": "Jaký tým vyhrál Stanley Cup nejvíckrát?", "a": "Montreal Canadiens" },
-  { "id": "s500-7", "category": "Sport", "q": "Kdo je držitelem světového rekordu v běhu na 100 metrů mužů?", "a": "Usain Bolt" },
-  { "id": "s500-8", "category": "Sport", "q": "Ve kterém roce se konaly první moderní olympijské hry?", "a": "1896" },
-  { "id": "s500-9", "category": "Sport", "q": "Jaké je oficiální jméno tenisového turnaje ve Wimbledonu?", "a": "The Championships, Wimbledon" },
-  { "id": "s500-10", "category": "Sport", "q": "Kolik hráčů je na hřišti v ragbyovém týmu (union) při zahájení zápasu?", "a": "15" },
-  { "id": "s500-11", "category": "Sport", "q": "Který český hokejista má přezdívku 'Jágrmeister'?", "a": "Jaromír Jágr" },
-  { "id": "s500-12", "category": "Sport", "q": "Jak dlouhá je maratonská trať v kilometrech?", "a": "42,195 km" },
-  { "id": "s500-13", "category": "Sport", "q": "Která země hostila zimní olympijské hry 1998?", "a": "Japonsko (Nagano)" },
-  { "id": "s500-14", "category": "Sport", "q": "Jak se jmenuje trofej udělovaná vítězi francouzské fotbalové ligy?", "a": "Ligue 1 Trophy (Hexagoal)" },
-  { "id": "s500-15", "category": "Sport", "q": "Kdo je považován za nejlepšího basketbalistu všech dob?", "a": "Michael Jordan" },
-  { "id": "s500-16", "category": "Sport", "q": "Jak se jmenuje závod Tour de France, který se jezdí v Paříži?", "a": "Champs-Élysées stage" },
-  { "id": "s500-17", "category": "Sport", "q": "Kolik grandslamů vyhrála Serena Williamsová?", "a": "23" },
-  { "id": "s500-18", "category": "Sport", "q": "Jaká země vyhrála fotbalové MS 2014?", "a": "Německo" },
-  { "id": "s500-19", "category": "Sport", "q": "Kdo drží rekord v počtu homerunů v MLB kariéře?", "a": "Barry Bonds" },
-  { "id": "s500-20", "category": "Sport", "q": "Jak se nazývá nejprestižnější závod v plochodrážním sportu?", "a": "Speedway Grand Prix" },
+  { "id": "f500-1", "category": "Film", "q": "Jak se jmenuje kameraman, který spolupracoval s Terrencem Malickem na filmech jako 'Strom života'?", "a": "Emmanuel Lubezki" },
+  { "id": "f500-2", "category": "Film", "q": "Který film Ingmara Bergmana z roku 1957 zobrazuje rytíře hrajícího šachy se Smrtí?", "a": "Sedmá pečeť" },
+  { "id": "f500-3", "category": "Film", "q": "Jak se jmenuje první celovečerní film Federica Felliniho?", "a": "Varieté" },
+  { "id": "f500-4", "category": "Film", "q": "Kdo složil hudbu k filmu 'Kmotr'?", "a": "Nino Rota" },
+  { "id": "f500-5", "category": "Film", "q": "Který německý expresionistický film z roku 1920 je známý svým bizarním vizuálním stylem a postavou Dr. Caligariho?", "a": "Kabinet doktora Caligariho" },
+  { "id": "f500-6", "category": "Film", "q": "Jaký byl rozpočet filmu 'Titanic' v době jeho vzniku?", "a": "200 milionů dolarů" },
+  { "id": "f500-7", "category": "Film", "q": "Který režisér natočil film 'Stalker'?", "a": "Andrej Tarkovskij" },
+  { "id": "f500-8", "category": "Film", "q": "Jak se jmenuje první zvukový film v historii?", "a": "Jazzový zpěvák" },
+  { "id": "f500-9", "category": "Film", "q": "Jak se jmenuje film, který získal Oscara za nejlepší film v roce 1951 a režíroval jej Vincente Minnelli?", "a": "Američan v Paříži" },
+  { "id": "f500-10", "category": "Film", "q": "Kdo je autorem scénáře k filmu 'Schodiště' (The Staircase, 1998)?", "a": "David R. G. Davies" },
+  { "id": "f500-11", "category": "Film", "q": "Jaký byl původní název filmu 'Blade Runner' podle románu Philipa K. Dicka?", "a": "Sní androidi o elektrických ovečkách?" },
+  { "id": "f500-12", "category": "Film", "q": "Kdo získal Oscara za kameru za film '1917'?", "a": "Roger Deakins" },
+  { "id": "f500-13", "category": "Film", "q": "Který francouzský režisér natočil film 'Pravidla hry' (1939)?", "a": "Jean Renoir" },
+  { "id": "f500-14", "category": "Film", "q": "Jak se jmenuje japonský animovaný film z roku 1988 režírovaný Isao Takahatou, který vypráví příběh dvou sourozenců během druhé světové války?", "a": "Hrob světlušek" },
+  { "id": "f500-15", "category": "Film", "q": "Který film Larse von Triera je první částí jeho 'Depresivní trilogie'?", "a": "Antikrist" },
+  { "id": "f500-16", "category": "Film", "q": "Kdo získal Oscara za nejlepší mužský herecký výkon ve filmu 'Leaving Las Vegas'?", "a": "Nicolas Cage" },
+  { "id": "f500-17", "category": "Film", "q": "Jaký je český název filmu 'Eternal Sunshine of the Spotless Mind'?", "a": "Věčný svit neposkvrněné mysli" },
+  { "id": "f500-18", "category": "Film", "q": "Kdo hrál hlavní roli ve filmu 'Velký Lebowski'?", "a": "Jeff Bridges" },
+  { "id": "f500-19", "category": "Film", "q": "Jak se jmenuje film z roku 1957, ve kterém Henry Fonda ztvárňuje jednoho z porotců?", "a": "12 rozhněvaných mužů" },
+  { "id": "f500-20", "category": "Film", "q": "Který japonský režisér natočil 'Osobní strážce' (Yojimbo)?", "a": "Akira Kurosawa" }
   { "id": "s500-21", "category": "Sport", "q": "Kolik minut trvá standardní fotbalový zápas bez prodloužení?", "a": "90 minut" },
   { "id": "s500-22", "category": "Sport", "q": "Kdo je nejmladší vítěz Tour de France v historii?", "a": "Tadej Pogačar" },
   { "id": "s500-23", "category": "Sport", "q": "Jaký je světový rekord v plavání na 100 m volným způsobem mužů (2023)?", "a": "46,86 s (César Cielo)" }
   
 ]
+
 
