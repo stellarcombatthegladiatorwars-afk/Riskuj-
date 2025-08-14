@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Riskuj! – 2 hráči (náhodné otázky dle obtížnosti, Skip nepočítá)</title>
+  <style>
+    /* _Vzhled aplikace_ */
+    :root{ --bg:#0e1320; --card:#151c2f; --accent:#33c3ff; --muted:#c7d2fe; --good:#49d17d; --bad:#ff6b6b; --text:#e5e7eb; --gold:#ffd166; }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#0a0f1d,#0f1628);color:var(--text);font:16px/1.45 system-ui,Segoe UI,Roboto,Inter,Arial}
+    .wrap{max-width:1200px;margin:24px auto;padding:0 16px}
+    header{display:flex;align-items:center;gap:16px;justify-content:space-between;margin-bottom:16px}
+    h1{font-size:22px;margin:0}
+    .controls{display:flex;gap:8px;flex-wrap:wrap}
+    button{border:0;border-radius:12px;padding:10px 14px;background:var(--card);color:var(--text);cursor:pointer;transition:.2s;box-shadow:0 0 0 1px rgba(255,255,255,.06) inset}
+    button:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(0,0,0,.35),0 0 0 1px rgba(255,255,255,.09) inset}
+    button.primary{background:var(--accent);color:#00111a;font-weight:600}
+    button.good{background:var(--good);color:#03140a}
+    button.bad{background:var(--bad);color:#2a0000}
+    button.warning{background:var(--gold);color:#3a2a00}
+
+    .board{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;background:rgba(255,255,255,.04);padding:8px;border-radius:16px}
+    .category{background:transparent;text-align:center;font-weight:700;letter-spacing:.4px;color:var(--muted);padding:8px}
+    .cell{background:var(--card);border-radius:12px;height:84px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:28px;color:var(--gold);cursor:pointer;user-select:none;position:relative;box-shadow:0 4px 18px rgba(0,0,0,.35)}
+    .cell[disabled]{opacity:.25;pointer-events:none;filter:grayscale(.6)}
+    .cell.skipped::after{content:"•";position:absolute;right:8px;top:6px;opacity:.6;font-weight:900}
+
+    .scorebar{display:grid;grid-template-columns:1fr 1fr auto;gap:12px;align-items:center;margin:16px 0}
+    .p{background:var(--card);border-radius:12px;padding:10px 14px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+    .p .name{font-weight:700}
+    .p .score{font-variant-numeric:tabular-nums;font-weight:800}
+    .turn{padding:6px 10px;border-radius:999px;background:var(--accent);color:#011018;font-weight:700}
+
+    dialog{border:0;border-radius:16px;background:#0b1120;color:var(--text);max-width:800px;width:calc(100% - 32px);box-shadow:0 20px 60px rgba(0,0,0,.55)}
+    dialog::backdrop{background:rgba(0,0,0,.6)}
+    .qwrap{padding:18px}
+    .qhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+    .qcat{opacity:.8}
+    .qpoints{font-weight:800;color:var(--gold)}
+    .qtext{font-size:22px;font-weight:600;margin:12px 0 4px}
+    .atoggle{opacity:.8;font-size:14px}
+    .answer{margin-top:8px;background:rgba(255,255,255,.05);border-radius:12px;padding:12px;display:none}
+    .qactions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+    .timer{margin-left:auto;background:rgba(255,255,255,.06);border-radius:999px;padding:6px 10px;font-variant-numeric:tabular-nums}
+
+    .footer{opacity:.6;text-align:center;margin:18px 0 6px;font-size:13px}
+    /* _Pozn.: Načítání otázek z /data/{100|200|300|400|500}.json, náhodný výběr. Skip/Zavřít NEspotřebuje otázku, ale pole zůstane zamčené._ */
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Riskuj! – lokální kvíz pro 2 hráče</h1>
+      <div class="controls">
+        <button id="btnSave" class="primary">Uložit stav</button>
+        <button id="btnLoad">Načíst stav</button>
+        <button id="btnReset" class="warning">Nová hra</button>
+      </div>
+    </header>
+
+    <section class="scorebar">
+      <div class="p" id="p1"><span class="name" contenteditable>Hráč 1</span><span class="score" data-score>0</span></div>
+      <div class="p" id="p2"><span class="name" contenteditable>Hráč 2</span><span class="score" data-score>0</span></div>
+      <div class="turn" id="turn">Na tahu: Hráč 1</div>
+    </section>
+
+    <section class="board" id="board" aria-live="polite"></section>
+
+    <p class="footer">Tip: Spusť přes lokální server (např. VS Code **Live Server**), protože prohlížeče blokují <em>fetch()</em> soubory z disku. Struktura: <code>/data/100.json</code>, <code>200.json</code>, ...</p>
+  </div>
+
+  <dialog id="qdlg">
+    <div class="qwrap">
+      <div class="qhead">
+        <div>
+          <div class="qcat" id="qcat">Kategorie</div>
+          <div class="qpoints" id="qpoints">100 bodů</div>
+        </div>
+        <div class="timer" id="timer">00:20</div>
+      </div>
+      <div class="qtext" id="qtext">Text otázky…</div>
+      <button class="atoggle" id="btnShow">Zobrazit odpověď</button>
+      <div class="answer" id="ans">Odpověď…</div>
+      <div class="qactions">
+        <button class="good" id="btnCorrect">Správně</button>
+        <button class="bad" id="btnWrong">Špatně</button>
+        <button id="btnSkip">Přeskočit</button>
+        <button id="btnClose">Zavřít</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script>
+    // NOTE: _Konfigurace kategorií a bodových řad_
+    const CATEGORIES = ["Historie","Věda","Literatura","Zeměpis","Hudba","Filmy"]; // uprav dle potřeby
+    const ROW_POINTS = [100,200,300,400,500];
+
+    // NOTE: _"Balíčky" (decks) otázek: pro každou obtížnost (points) a kategorii máme SHUFFLE pořadí_
+    // Struktura: decks.get(points) -> Map(category -> [otázky v náhodném pořadí])
+    // a ukazatele indexů: deckIdx.get(points) -> Map(category -> currentIndex)
+    const decks = new Map();
+    const deckIdx = new Map();
+
+    // NOTE: _Stav hry_
+    const state = {
+      currentPlayer: 1,
+      scores: {1:0,2:0},
+      usedCells: new Set(), // např. "Historie|300"
+      // Otázky se "spotřebují" posunem indexu v decku – pouze po Správně/Špatně NEBO při Skip/Zavřít (aby se neopakovaly)
+    };
+
+    const els = {
+      board: document.getElementById('board'),
+      p1: document.querySelector('#p1 [data-score]'),
+      p2: document.querySelector('#p2 [data-score]'),
+      p1Name: document.querySelector('#p1 .name'),
+      p2Name: document.querySelector('#p2 .name'),
+      turn: document.getElementById('turn'),
+      dlg: document.getElementById('qdlg'),
+      qcat: document.getElementById('qcat'),
+      qpoints: document.getElementById('qpoints'),
+      qtext: document.getElementById('qtext'),
+      ans: document.getElementById('ans'),
+      btnShow: document.getElementById('btnShow'),
+      btnCorrect: document.getElementById('btnCorrect'),
+      btnWrong: document.getElementById('btnWrong'),
+      btnSkip: document.getElementById('btnSkip'),
+      btnClose: document.getElementById('btnClose'),
+      timer: document.getElementById('timer'),
+      btnSave: document.getElementById('btnSave'),
+      btnLoad: document.getElementById('btnLoad'),
+      btnReset: document.getElementById('btnReset'),
+    };
+
+    // NOTE: _Vykreslení hrací desky_
+    function renderBoard(){
+      els.board.innerHTML = '';
+      CATEGORIES.forEach(cat=>{
+        const d = document.createElement('div'); d.className='category'; d.textContent=cat; els.board.appendChild(d);
+      });
+      ROW_POINTS.forEach(points=>{
+        CATEGORIES.forEach(cat=>{
+          const key = `${cat}|${points}`;
+          const btn = document.createElement('button');
+          btn.className='cell'; btn.textContent=points;
+          if(state.usedCells.has(key)) btn.setAttribute('disabled','');
+          btn.addEventListener('click',()=>openQuestion(cat, points, btn));
+          els.board.appendChild(btn);
+        });
+      });
+    }
+
+    // NOTE: _Načtení a VYTVOŘENÍ DECKŮ pro danou obtížnost_
+    async function ensureDecksFor(points){
+      if(decks.has(points)) return; // už připraveno
+      let data;
+      try{
+        const res = await fetch(`data/${points}.json`, {cache:'no-store'});
+        if(!res.ok) throw new Error('HTTP '+res.status);
+        data = await res.json();
+      }catch(err){
+        console.warn('Nepodařilo se načíst data/'+points+'.json. Použiji nouzová vestavěná data.', err);
+        data = fallbackQuestions(points);
+      }
+      // Založ mapy
+      const perCat = new Map();
+      const idxMap = new Map();
+      CATEGORIES.forEach(c => { perCat.set(c, []); idxMap.set(c, 0); });
+      // Rozdělení podle kategorií
+      (Array.isArray(data)?data:[]).forEach(q => {
+        if(perCat.has(q.category)) perCat.get(q.category).push(q);
+      });
+      // Zamíchat každou kategorii (Fisher–Yates) a NÁHODNĚ nastavit startovní offset
+      for(const c of CATEGORIES){
+        const arr = perCat.get(c);
+        for(let i=arr.length-1;i>0;i--){
+          const j = Math.floor(Math.random()*(i+1));
+          [arr[i],arr[j]] = [arr[j],arr[i]];
+        }
+        if(arr.length>0){ idxMap.set(c, Math.floor(Math.random()*arr.length)); }
+      }
+      decks.set(points, perCat);
+      deckIdx.set(points, idxMap);
+    }
+
+    // NOTE: _Získání aktuální otázky z DECKU (bez posunu)_
+    async function peekQuestion(category, points){
+      await ensureDecksFor(points);
+      const perCat = decks.get(points);
+      const idxMap = deckIdx.get(points);
+      const arr = perCat.get(category) || [];
+      const i = idxMap.get(category) || 0;
+      if(arr.length===0) return null;
+      return arr[i % arr.length];
+    }
+
+    // NOTE: _Spotřebování otázky – posuň index_
+    function consumeQuestion(category, points){
+      const idxMap = deckIdx.get(points);
+      const perCat = decks.get(points);
+      const arr = perCat.get(category) || [];
+      if(arr.length===0) return;
+      const i = (idxMap.get(category) || 0) + 1;
+      idxMap.set(category, i % arr.length);
+    }
+
+    // NOTE: _Časovač_
+    let tInt = null, remaining = 20;
+    function startTimer(){ remaining=20; updateTimer(); clearInterval(tInt); tInt=setInterval(()=>{ remaining--; updateTimer(); if(remaining<=0){ clearInterval(tInt); beep(); } },1000); }
+    function stopTimer(){ clearInterval(tInt); }
+    function updateTimer(){ els.timer.textContent = `00:${String(remaining).padStart(2,'0')}`; }
+    function beep(){ const ctx=new (window.AudioContext||window.webkitAudioContext)(); const o=ctx.createOscillator(); const g=ctx.createGain(); o.frequency.value=660;o.type='sine'; o.connect(g); g.connect(ctx.destination); g.gain.setValueAtTime(0.001, ctx.currentTime); g.gain.exponentialRampToValueAtTime(0.3, ctx.currentTime+0.01); o.start(); setTimeout(()=>{ g.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime+0.2); o.stop(ctx.currentTime+0.25); },220); }
+
+    // NOTE: _Otevření otázky – zamkni políčko hned, otázku nespaluj_
+    let current = null; // {cat, points, key, btn, q}
+    async function openQuestion(cat, points, btn){
+      if(btn.hasAttribute('disabled')) return; // ochrana proti dvojkliku
+      const q = await peekQuestion(cat, points);
+      if(!q){ toast('Došly otázky pro tuto kategorii/obtížnost.'); return; }
+
+      const key = `${cat}|${points}`;
+      state.usedCells.add(key); // pole je jednorázové
+      btn.setAttribute('disabled','');
+
+      current = { cat, points, key, btn, q };
+      els.qcat.textContent = cat;
+      els.qpoints.textContent = `${points} bodů`;
+      els.qtext.textContent = q.q;
+      els.ans.textContent = q.a;
+      els.ans.style.display = 'none';
+      els.dlg.showModal();
+      startTimer();
+    }
+
+    // NOTE: _Skóre a střídání – otázku spotřebujeme po výsledku NEBO po Skip/Zavřít, aby se neopakovala_
+    function applyScore(ok){
+      if(!current) return;
+      const delta = current.points * (ok?1:-1);
+      state.scores[state.currentPlayer]+=delta;
+      consumeQuestion(current.cat, current.points); // posuň deck
+      updateScores();
+      nextPlayer();
+      closeDialog();
+    }
+
+    function updateScores(){ els.p1.textContent = state.scores[1]; els.p2.textContent = state.scores[2]; }
+    function nextPlayer(){ state.currentPlayer = state.currentPlayer===1?2:1; updateTurn(); }
+    function updateTurn(){ const name = state.currentPlayer===1? (els.p1Name.textContent||'Hráč 1') : (els.p2Name.textContent||'Hráč 2'); els.turn.textContent = `Na tahu: ${name}`; }
+    function closeDialog(){ stopTimer(); els.dlg.close(); current=null; }
+
+    // NOTE: _Uložit/Načíst – ukládáme i pozice decků_
+    function saveState(){
+      const deckPositions = {};
+      for(const p of ROW_POINTS){
+        if(deckIdx.has(p)){
+          deckPositions[p] = {};
+          for(const c of CATEGORIES){ deckPositions[p][c] = deckIdx.get(p).get(c) || 0; }
+        }
+      }
+      const payload = { state: {
+        currentPlayer: state.currentPlayer,
+        scores: state.scores,
+        usedCells: Array.from(state.usedCells),
+        deckPositions
+      }, names: [els.p1Name.textContent, els.p2Name.textContent] };
+      localStorage.setItem('riskuj2p-v3', JSON.stringify(payload));
+      toast('Stav uložen.');
+    }
+
+    async function loadState(){
+      const raw = localStorage.getItem('riskuj2p-v3');
+      if(!raw){ toast('Nenalezen uložený stav.'); return; }
+      const p = JSON.parse(raw);
+      state.currentPlayer = p.state.currentPlayer; state.scores = p.state.scores;
+      state.usedCells = new Set(p.state.usedCells||[]);
+      await rebuildAllDecks(true); // postav nové decky se shufflem
+      const pos = p.state.deckPositions||{};
+      for(const pts of ROW_POINTS){
+        const m = deckIdx.get(pts); if(!m) continue;
+        for(const c of CATEGORIES){ if(pos[pts]&&typeof pos[pts][c]==='number') m.set(c, pos[pts][c]); }
+      }
+      els.p1Name.textContent = p.names?.[0] || 'Hráč 1';
+      els.p2Name.textContent = p.names?.[1] || 'Hráč 2';
+      updateScores(); updateTurn(); renderBoard();
+      toast('Stav načten.');
+    }
+
+    // NOTE: _Reset hry – vyčistí stav a PŘEJEMNĚ SHUFFLUJE DECKY_
+    async function resetGame(){
+      state.currentPlayer=1; state.scores={1:0,2:0}; state.usedCells=new Set();
+      await rebuildAllDecks(true); // reshuffle
+      updateScores(); updateTurn(); renderBoard(); toast('Nová hra připravena.');
+    }
+
+    // NOTE: _Pomocné: přestavět všechny decky (načtení a shuffle)_
+    async function rebuildAllDecks(reshuffle=false){
+      if(reshuffle){ decks.clear(); deckIdx.clear(); }
+      for(const p of ROW_POINTS){ await ensureDecksFor(p); }
+    }
+
+    // NOTE: _Události_
+    els.btnShow.addEventListener('click', ()=>{ els.ans.style.display = (els.ans.style.display==='none'?'block':'none'); });
+    els.btnCorrect.addEventListener('click', ()=>applyScore(true));
+    els.btnWrong.addEventListener('click', ()=>applyScore(false));
+    els.btnSkip.addEventListener('click', ()=>{ // skip = pole zůstává zamčené, otázka se POSUNE, aby se příště neopakovala
+      if(current){ current.btn.classList.add('skipped'); consumeQuestion(current.cat, current.points); }
+      nextPlayer();
+      closeDialog();
+    });
+    els.btnClose.addEventListener('click', ()=>{ // zavření = chovej se jako skip: posuň otázku, ať se neopakuje
+      if(current){ current.btn.classList.add('skipped'); consumeQuestion(current.cat, current.points); }
+      nextPlayer();
+      closeDialog();
+    });
+
+    els.btnSave.addEventListener('click', saveState);
+    els.btnLoad.addEventListener('click', ()=>{ loadState(); });
+    els.btnReset.addEventListener('click', ()=>{ resetGame(); });
+
+    window.addEventListener('keydown', (e)=>{ if(!els.dlg.open) return; if(e.key==='Enter'){ els.btnShow.click(); } if(e.key==='y'){ els.btnCorrect.click(); } if(e.key==='n'){ els.btnWrong.click(); } if(e.key==='Escape'){ els.btnClose.click(); } });
+
+    // NOTE: _Fallback – vestavěné otázky pro případ, že neexistují JSON soubory_
+    function fallbackQuestions(points){
+      const base = {
+        100:[
+          {id:'h100-1',category:'Historie',q:'Který český král byl otec Karla IV.?',a:'Jan Lucemburský'},
+          {id:'v100-1',category:'Věda',q:'Chemické značení vody?',a:'H₂O'},
+          {id:'l100-1',category:'Literatura',q:'Autor "Babičky"?',a:'Božena Němcová'},
+          {id:'z100-1',category:'Zeměpis',q:'Hlavní město Slovenska?',a:'Bratislava'},
+          {id:'m100-1',category:'Hudba',q:'Kdo složil Vltavu?',a:'Bedřich Smetana'},
+          {id:'f100-1',category:'Filmy',q:'Režisér "Pelíšky"?',a:'Jan Hřebejk'}
+        ],
+        200:[
+          {id:'h200-1',category:'Historie',q:'Bílá hora – rok?',a:'1620'},
+          {id:'v200-1',category:'Věda',q:'Planeta nejblíže Slunci?',a:'Merkur'},
+          {id:'l200-1',category:'Literatura',q:'Autor "Malý princ"?',a:'Antoine de Saint‑Exupéry'},
+          {id:'z200-1',category:'Zeměpis',q:'Nejvyšší hora světa?',a:'Mount Everest'},
+          {id:'m200-1',category:'Hudba',q:'Král popu?',a:'Michael Jackson'},
+          {id:'f200-1',category:'Filmy',q:'Hlavní role ve "Forrest Gump"?',a:'Tom Hanks'}
+        ],
+        300:[
+          {id:'h300-1',category:'Historie',q:'Listina z roku 1212?',a:'Zlatá bula sicilská'},
+          {id:'v300-1',category:'Věda',q:'Jednotka proudu?',a:'Ampér'},
+          {id:'l300-1',category:'Literatura',q:'Nobelista 1984 (ČR)?',a:'Jaroslav Seifert'},
+          {id:'z300-1',category:'Zeměpis',q:'Řeka v Paříži?',a:'Seina'},
+          {id:'m300-1',category:'Hudba',q:'Autor opery Rusalka?',a:'Antonín Dvořák'},
+          {id:'f300-1',category:'Filmy',q:'Film Formana 1975?',a:'Přelet nad kukaččím hnízdem'}
+        ],
+        400:[
+          {id:'h400-1',category:'Historie',q:'Korunovační město českých králů?',a:'Praha'},
+          {id:'v400-1',category:'Věda',q:'Zákony pohybu formuloval?',a:'Isaac Newton'},
+          {id:'l400-1',category:'Literatura',q:'Autor "Proces"?',a:'Franz Kafka'},
+          {id:'z400-1',category:'Zeměpis',q:'Kontinent s největší rozlohou?',a:'Asie'},
+          {id:'m400-1',category:'Hudba',q:'Nástroj s klapkami a jazýčky, Louis Armstrong',a:'Trubka'},
+          {id:'f400-1',category:'Filmy',q:'Režisér "Amadeus"?',a:'Miloš Forman'}
+        ],
+        500:[
+          {id:'h500-1',category:'Historie',q:'Poslední česká královna?',a:'Eliška Rejčka (alternativně Eliška Přemyslovna)'},
+          {id:'v500-1',category:'Věda',q:'Co vyjadřuje Avogadrova konstanta?',a:'Počet částic v jednom molu'},
+          {id:'l500-1',category:'Literatura',q:'Autor "Pán prstenů"?',a:'J. R. R. Tolkien'},
+          {id:'z500-1',category:'Zeměpis',q:'Poušť v jižní Africe?',a:'Kalahari'},
+          {id:'m500-1',category:'Hudba',q:'Hudební směr z New Orleans poč. 20. stol.?',a:'Jazz'},
+          {id:'f500-1',category:'Filmy',q:'Sci‑fi sága s Jedi rytíři?',a:'Star Wars'}
+        ]
+      };
+      return base[points] ? base[points] : [];
+    }
+
+    // NOTE: _Start – připrav decky pro všechny obtížnosti a vykresli_
+    (async function init(){
+      await rebuildAllDecks(true); // první start = nový shuffle + náhodné offsety
+      renderBoard(); updateScores(); updateTurn();
+    })();
+  </script>
+</body>
+</html>
