@@ -117,7 +117,7 @@
   { "id": "h500-20", "category": "Hudba", "q": "Jak se jmenuje autor „Symfonie č. 9 s Ódou na radost“?", "a": "Ludwig van Beethoven" },
   { "id": "h500-21", "category": "Hudba", "q": "Kdo složil hudbu k filmu „Hvězdné války“?", "a": "John Williams" },
   { "id": "h500-22", "category": "Hudba", "q": "Jaký hudební nástroj používá struny a smyčec a je menší než kontrabas?", "a": "Housle" },
-  { "id": "h500-23", "category": "Hudba", "q": "Kdo složil operu „Don Giovanni“?", "a": "Wolfgang Amadeus Mozart" }
+  { "id": "h500-23", "category": "Hudba", "q": "Kdo složil operu „Don Giovanni“?", "a": "Wolfgang Amadeus Mozart" },
 
   { "id": "f400-1", "category": "Filmy", "q": "Kdo ztvárnil roli Michaela Corleona ve filmové trilogii 'Kmotr'?", "a": "Al Pacino" },
   { "id": "f400-2", "category": "Filmy", "q": "Jak se jmenuje slavný němý film Fritze Langa z roku 1927 zobrazující futuristické město?", "a": "Metropolis" },
@@ -140,6 +140,7 @@
   { "id": "f400-19", "category": "Filmy", "q": "Jak se jmenuje režisér 'Kmotr II' a 'Apokalypsa'", "a": "Francis Ford Coppola" },
   { "id": "f400-20", "category": "Filmy", "q": "Jaký film vypráví příběh o boxerovi Jakeu LaMottovi?", "a": "Zuřící býk" }
 ]
+
 
 
 
