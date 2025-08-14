@@ -42,7 +42,7 @@
   { "id": "v300-17", "category": "Věda", "q": "Jak se nazývá jednotka elektrického proudu?", "a": "Ampér" },
   { "id": "v300-18", "category": "Věda", "q": "Jak se nazývá věda o chování a mysli?", "a": "Psychologie" },
   { "id": "v300-19", "category": "Věda", "q": "Jak se nazývá největší planeta Sluneční soustavy?", "a": "Jupiter" },
-  { "id": "v300-20", "category": "Věda", "q": "Který kov je kapalný při pokojové teplotě?", "a": "Rtuť" }
+  { "id": "v300-20", "category": "Věda", "q": "Který kov je kapalný při pokojové teplotě?", "a": "Rtuť" },
   { "id": "v300-21", "category": "Věda", "q": "Který vědec formuloval tři zákony pohybu?", "a": "Isaac Newton" },
   { "id": "v300-22", "category": "Věda", "q": "Jaká je chemická značka pro kyslík?", "a": "O" },
   { "id": "v300-23", "category": "Věda", "q": "Jak se nazývá síť buněk v mozku přenášející signály?", "a": "Neuronová (nervová) síť / neurony" },
@@ -91,7 +91,7 @@
   { "id": "z300-17", "category": "Zeměpis", "q": "Jaké je hlavní město Egypta?", "a": "Káhira" },
   { "id": "z300-18", "category": "Zeměpis", "q": "Který oceán omývá západní pobřeží USA?", "a": "Tichý oceán" },
   { "id": "z300-19", "category": "Zeměpis", "q": "Jaké je hlavní město Norska?", "a": "Oslo" },
-  { "id": "z300-20", "category": "Zeměpis", "q": "Jaké je hlavní město Argentiny?", "a": "Buenos Aires" }
+  { "id": "z300-20", "category": "Zeměpis", "q": "Jaké je hlavní město Argentiny?", "a": "Buenos Aires" },
   { "id": "z300-21", "category": "Zeměpis", "q": "Poušť rozkládající se v jižní Africe?", "a": "Kalahari" },
   { "id": "z300-22", "category": "Zeměpis", "q": "Jaké moře omývá Itálii na východě?", "a": "Jaderské moře" },
   { "id": "z300-23", "category": "Zeměpis", "q": "Který stát je největší podle rozlohy?", "a": "Rusko" },
@@ -115,7 +115,7 @@
   { "id": "m300-17", "category": "Hudba", "q": "Jaký je název největší písňové soutěže v Evropě?", "a": "Eurovision Song Contest" },
   { "id": "m300-18", "category": "Hudba", "q": "Kdo je autorem skladby „Vltava“?", "a": "Bedřich Smetana" },
   { "id": "m300-19", "category": "Hudba", "q": "Jak se jmenuje známá skupina Freddieho Mercuryho?", "a": "Queen" },
-  { "id": "m300-20", "category": "Hudba", "q": "Jaký nástroj má šest strun a hraje se na něj trsátkem nebo prsty?", "a": "Kytara" }
+  { "id": "m300-20", "category": "Hudba", "q": "Jaký nástroj má šest strun a hraje se na něj trsátkem nebo prsty?", "a": "Kytara" },
   { "id": "m300-21", "category": "Hudba", "q": "Kdo složil „Novosvětskou“ (Symfonie č. 9 e moll)?", "a": "Antonín Dvořák" },
   { "id": "m300-22", "category": "Hudba", "q": "Hudební styl z New Orleans počátku 20. století?", "a": "Jazz" },
   { "id": "m300-23", "category": "Hudba", "q": "Jak se jmenuje dřevěný dechový nástroj se strojkem, používaný v orchestru (vyšší než fagot)?", "a": "Hoboj (popř. klarinet – dle kontextu)" },
