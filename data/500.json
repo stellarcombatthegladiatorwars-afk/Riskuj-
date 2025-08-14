@@ -1,0 +1,25 @@
+[
+  { "id": "h500-1", "category": "Historie", "q": "Poslední česká královna?", "a": "Eliška Rejčka (alternativně uváděna Eliška Přemyslovna dle kontextu)" },
+  { "id": "h500-2", "category": "Historie", "q": "Jak se jmenuje mírová smlouva, která ukončila třicetiletou válku?", "a": "Vestfálský mír (1648)" },
+  { "id": "h500-3", "category": "Historie", "q": "Kdo vládl v českých zemích v době reforem Marie Terezie?", "a": "Habsburská monarchie; Marie Terezie (1740–1780)" },
+
+  { "id": "v500-1", "category": "Věda", "q": "Co vyjadřuje Avogadrova konstanta?", "a": "Počet částic v jednom molu (≈ 6,022×10²³)" },
+  { "id": "v500-2", "category": "Věda", "q": "Jaký je rozdíl mezi rychlostí a zrychlením?", "a": "Rychlost popisuje změnu polohy v čase; zrychlení změnu rychlosti v čase" },
+  { "id": "v500-3", "category": "Věda", "q": "Napiš chemický vzorec pro kyselinu sírovou.", "a": "H₂SO₄" },
+
+  { "id": "l500-1", "category": "Literatura", "q": "Autor „Na západní frontě klid“?", "a": "Erich Maria Remarque" },
+  { "id": "l500-2", "category": "Literatura", "q": "Jak se nazývá rozsáhlý cyklus románů Marcela Prousta?", "a": "Hledání ztraceného času" },
+  { "id": "l500-3", "category": "Literatura", "q": "Kdo je autorem románu „Zločin a trest“?", "a": "Fjodor Michajlovič Dostojevskij" },
+
+  { "id": "z500-1", "category": "Zeměpis", "q": "Jaké je hlavní město Nového Zélandu?", "a": "Wellington" },
+  { "id": "z500-2", "category": "Zeměpis", "q": "Nejdelší řeka Jižní Ameriky?", "a": "Amazonka" },
+  { "id": "z500-3", "category": "Zeměpis", "q": "Jaké je nejvyšší aktivní sopka na Zemi?", "a": "Ojos del Salado (dle kritérií; bývá uváděna jako nejvyšší aktivní)" },
+
+  { "id": "m500-1", "category": "Hudba", "q": "Jak se jmenuje skladba s částmi „Dies irae“ v rámci latinské mše za zemřelé?", "a": "Requiem" },
+  { "id": "m500-2", "category": "Hudba", "q": "Kdo složil „Bolero“?", "a": "Maurice Ravel" },
+  { "id": "m500-3", "category": "Hudba", "q": "Jak se jmenuje český skladatel známý „Tarasem Bulbou“?", "a": "Leoš Janáček" },
+
+  { "id": "f500-1", "category": "Filmy", "q": "Kdo režíroval „2001: Vesmírná odysea“?", "a": "Stanley Kubrick" },
+  { "id": "f500-2", "category": "Filmy", "q": "Jak se jmenuje režisér trilogie „Pán prstenů“?", "a": "Peter Jackson" },
+  { "id": "f500-3", "category": "Filmy", "q": "Který film Akiry Kurosawy inspiroval „Sedm statečných“?", "a": "Sedm samurajů" }
+]

@@ -1,0 +1,25 @@
+[
+  { "id": "h100-1", "category": "Historie", "q": "Který český král byl otec Karla IV.?", "a": "Jan Lucemburský" },
+  { "id": "h100-2", "category": "Historie", "q": "V jakém městě sídlí Pražský hrad?", "a": "Praha" },
+  { "id": "h100-3", "category": "Historie", "q": "Jak se jmenoval zakladatel rodu Přemyslovců podle pověsti?", "a": "Přemysl Oráč" },
+
+  { "id": "v100-1", "category": "Věda", "q": "Chemické značení vody?", "a": "H₂O" },
+  { "id": "v100-2", "category": "Věda", "q": "Která planeta je nejblíže Slunci?", "a": "Merkur" },
+  { "id": "v100-3", "category": "Věda", "q": "Kolik má člověk obvykle plic?", "a": "Dvě" },
+
+  { "id": "l100-1", "category": "Literatura", "q": "Autor knihy „Babička“?", "a": "Božena Němcová" },
+  { "id": "l100-2", "category": "Literatura", "q": "Kdo napsal „Malý princ“?", "a": "Antoine de Saint‑Exupéry" },
+  { "id": "l100-3", "category": "Literatura", "q": "Jak se jmenuje český básník – autor „Kytice“?", "a": "Karel Jaromír Erben" },
+
+  { "id": "z100-1", "category": "Zeměpis", "q": "Hlavní město Slovenska?", "a": "Bratislava" },
+  { "id": "z100-2", "category": "Zeměpis", "q": "Na kterém kontinentu leží Česká republika?", "a": "Evropa" },
+  { "id": "z100-3", "category": "Zeměpis", "q": "Jak se jmenuje řeka protékající Prahou?", "a": "Vltava" },
+
+  { "id": "m100-1", "category": "Hudba", "q": "Kdo složil symfonickou báseň „Vltava“?", "a": "Bedřich Smetana" },
+  { "id": "m100-2", "category": "Hudba", "q": "Jak se jmenuje skupina Beatles? (uveď žánr)", "a": "Rocková kapela" },
+  { "id": "m100-3", "category": "Hudba", "q": "Který nástroj má černé a bílé klávesy?", "a": "Klavír" },
+
+  { "id": "f100-1", "category": "Filmy", "q": "Kdo hrál Forresta Gumpa?", "a": "Tom Hanks" },
+  { "id": "f100-2", "category": "Filmy", "q": "Jak se jmenuje slavná sci‑fi sága s Jedi rytíři?", "a": "Star Wars" },
+  { "id": "f100-3", "category": "Filmy", "q": "Režisér filmu „Pelíšky“?", "a": "Jan Hřebejk" }
+]

@@ -1,0 +1,25 @@
+[
+  { "id": "h300-1", "category": "Historie", "q": "Listina z roku 1212 potvrzující dědičné právo českých králů?", "a": "Zlatá bula sicilská" },
+  { "id": "h300-2", "category": "Historie", "q": "Které století je spojeno s husitskými válkami?", "a": "15. století" },
+  { "id": "h300-3", "category": "Historie", "q": "Který panovník byl zvaný „Otec vlasti“?", "a": "Karel IV." },
+
+  { "id": "v300-1", "category": "Věda", "q": "Který vědec formuloval tři zákony pohybu?", "a": "Isaac Newton" },
+  { "id": "v300-2", "category": "Věda", "q": "Jaká je chemická značka pro kyslík?", "a": "O" },
+  { "id": "v300-3", "category": "Věda", "q": "Jak se nazývá síť buněk v mozku přenášející signály?", "a": "Neuronová (nervová) síť / neurony" },
+
+  { "id": "l300-1", "category": "Literatura", "q": "Kdo napsal román „Proces“?", "a": "Franz Kafka" },
+  { "id": "l300-2", "category": "Literatura", "q": "Nobelova cena za literaturu 1984 (český autor)?", "a": "Jaroslav Seifert" },
+  { "id": "l300-3", "category": "Literatura", "q": "Autor „Písní kosmických“?", "a": "Jan Neruda" },
+
+  { "id": "z300-1", "category": "Zeměpis", "q": "Poušť rozkládající se v jižní Africe?", "a": "Kalahari" },
+  { "id": "z300-2", "category": "Zeměpis", "q": "Jaké moře omývá Itálii na východě?", "a": "Jaderské moře" },
+  { "id": "z300-3", "category": "Zeměpis", "q": "Který stát je největší podle rozlohy?", "a": "Rusko" },
+
+  { "id": "m300-1", "category": "Hudba", "q": "Kdo složil „Novosvětskou“ (Symfonie č. 9 e moll)?", "a": "Antonín Dvořák" },
+  { "id": "m300-2", "category": "Hudba", "q": "Hudební styl z New Orleans počátku 20. století?", "a": "Jazz" },
+  { "id": "m300-3", "category": "Hudba", "q": "Jak se jmenuje dřevěný dechový nástroj se strojkem, používaný v orchestru (vyšší než fagot)?", "a": "Hoboj (popř. klarinet – dle kontextu)" },
+
+  { "id": "f300-1", "category": "Filmy", "q": "Kdo režíroval film „Pelíšky“?", "a": "Jan Hřebejk" },
+  { "id": "f300-2", "category": "Filmy", "q": "Jak se jmenuje trilogie Petera Jacksona podle Tolkiena z počátku 21. století?", "a": "Pán prstenů" },
+  { "id": "f300-3", "category": "Filmy", "q": "Ve kterém roce vyšel původní film „Matrix“?", "a": "1999" }
+]

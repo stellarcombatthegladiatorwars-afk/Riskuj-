@@ -1,0 +1,25 @@
+[
+  { "id": "h400-1", "category": "Historie", "q": "Které město bylo korunovačním městem českých králů?", "a": "Praha" },
+  { "id": "h400-2", "category": "Historie", "q": "Kdo vedl české povstání roku 1618 jako jeden z direktorů a byl popraven na Staroměstském náměstí?", "a": "Např. Jiří Jesenius (mezi 27 pány)" },
+  { "id": "h400-3", "category": "Historie", "q": "Který panovník založil Karlovu univerzitu?", "a": "Karel IV." },
+
+  { "id": "v400-1", "category": "Věda", "q": "Která fyzikální veličina se měří v pascalech (Pa)?", "a": "Tlak" },
+  { "id": "v400-2", "category": "Věda", "q": "Jak se nazývá proces přeměny kapaliny v plyn při teplotě varu?", "a": "Var" },
+  { "id": "v400-3", "category": "Věda", "q": "Co je mitochondrie?", "a": "Buněčná organela, „elektrárna“ buňky" },
+
+  { "id": "l400-1", "category": "Literatura", "q": "Který autor napsal „Hobita“?", "a": "J. R. R. Tolkien" },
+  { "id": "l400-2", "category": "Literatura", "q": "Kdo je autorem díla „Obsluhoval jsem anglického krále“?", "a": "Bohumil Hrabal" },
+  { "id": "l400-3", "category": "Literatura", "q": "Jak se jmenuje román Victora Huga o Quasimodovi?", "a": "Chrám Matky Boží v Paříži" },
+
+  { "id": "z400-1", "category": "Zeměpis", "q": "Jaké je hlavní město Kanady?", "a": "Ottawa" },
+  { "id": "z400-2", "category": "Zeměpis", "q": "Které pohoří odděluje Evropu a Asii v Rusku?", "a": "Ural" },
+  { "id": "z400-3", "category": "Zeměpis", "q": "Jaké je největší jezero Afriky?", "a": "Viktoriino jezero" },
+
+  { "id": "m400-1", "category": "Hudba", "q": "Kdo je autorem opery „Prodaná nevěsta“?", "a": "Bedřich Smetana" },
+  { "id": "m400-2", "category": "Hudba", "q": "Barokní skladatel známý „Mesiášem“?", "a": "Georg Friedrich Händel" },
+  { "id": "m400-3", "category": "Hudba", "q": "Jak se jmenuje ladění, kde je oktáva rozdělena na 12 stejných půltónů?", "a": "Rovnoměrně temperované ladění" },
+
+  { "id": "f400-1", "category": "Filmy", "q": "Kdo režíroval „Blade Runner“ (1982)?", "a": "Ridley Scott" },
+  { "id": "f400-2", "category": "Filmy", "q": "Který film získal Oscara za nejlepší film v roce 1994 a vypráví o životě muže s IQ 75?", "a": "Forrest Gump" },
+  { "id": "f400-3", "category": "Filmy", "q": "Jak se jmenuje český film z roku 1966 známý absurdním humorem dvojice Svěrák–Smoljak? (krátký film)", "a": "Viz např. „Výlet na kole“ / „Zavíráme“ – přijmi libovolný správný titul" }
+]

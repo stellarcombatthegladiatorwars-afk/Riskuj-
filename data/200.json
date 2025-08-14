@@ -1,0 +1,25 @@
+[
+  { "id": "h200-1", "category": "Historie", "q": "V kterém roce proběhla bitva na Bílé hoře?", "a": "1620" },
+  { "id": "h200-2", "category": "Historie", "q": "Kdo byl prvním československým prezidentem?", "a": "Tomáš Garrigue Masaryk" },
+  { "id": "h200-3", "category": "Historie", "q": "Jak se jmenoval poslední český král z rodu Přemyslovců?", "a": "Václav III." },
+
+  { "id": "v200-1", "category": "Věda", "q": "Jednotka elektrického proudu?", "a": "Ampér" },
+  { "id": "v200-2", "category": "Věda", "q": "Jaké je chemické značení kuchyňské soli?", "a": "NaCl" },
+  { "id": "v200-3", "category": "Věda", "q": "Který plyn dýcháme jako hlavní složku vzduchu?", "a": "Dusík" },
+
+  { "id": "l200-1", "category": "Literatura", "q": "Kdo napsal „RUR“?", "a": "Karel Čapek" },
+  { "id": "l200-2", "category": "Literatura", "q": "Autor románu „1984“?", "a": "George Orwell" },
+  { "id": "l200-3", "category": "Literatura", "q": "Který český spisovatel je autorem „Osudů dobrého vojáka Švejka“?", "a": "Jaroslav Hašek" },
+
+  { "id": "z200-1", "category": "Zeměpis", "q": "Nejvyšší hora světa?", "a": "Mount Everest" },
+  { "id": "z200-2", "category": "Zeměpis", "q": "Řeka protékající Paříží?", "a": "Seina" },
+  { "id": "z200-3", "category": "Zeměpis", "q": "Jaké je hlavní město Rakouska?", "a": "Vídeň" },
+
+  { "id": "m200-1", "category": "Hudba", "q": "Autor opery „Rusalka“?", "a": "Antonín Dvořák" },
+  { "id": "m200-2", "category": "Hudba", "q": "Kdo je přezdíván „král popu“?", "a": "Michael Jackson" },
+  { "id": "m200-3", "category": "Hudba", "q": "Jaký hudební nástroj má struny a hraje se smyčcem (v orchestru nejmenší)?", "a": "Housle" },
+
+  { "id": "f200-1", "category": "Filmy", "q": "Který český režisér natočil film „Amadeus“?", "a": "Miloš Forman" },
+  { "id": "f200-2", "category": "Filmy", "q": "Oscarem oceněný film Miloše Formana z roku 1975?", "a": "Přelet nad kukaččím hnízdem" },
+  { "id": "f200-3", "category": "Filmy", "q": "Jak se jmenuje čaroděj z filmové série o Harrym Potterovi, ředitel Bradavic?", "a": "Albus Brumbál (Dumbledore)" }
+]
