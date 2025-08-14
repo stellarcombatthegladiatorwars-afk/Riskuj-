@@ -138,7 +138,7 @@
   { "id": "f500-17", "category": "Film", "q": "Jaký je český název filmu 'Eternal Sunshine of the Spotless Mind'?", "a": "Věčný svit neposkvrněné mysli" },
   { "id": "f500-18", "category": "Film", "q": "Kdo hrál hlavní roli ve filmu 'Velký Lebowski'?", "a": "Jeff Bridges" },
   { "id": "f500-19", "category": "Film", "q": "Jak se jmenuje film z roku 1957, ve kterém Henry Fonda ztvárňuje jednoho z porotců?", "a": "12 rozhněvaných mužů" },
-  { "id": "f500-20", "category": "Film", "q": "Který japonský režisér natočil 'Osobní strážce' (Yojimbo)?", "a": "Akira Kurosawa" }
+  { "id": "f500-20", "category": "Film", "q": "Který japonský režisér natočil 'Osobní strážce' (Yojimbo)?", "a": "Akira Kurosawa" },
   { "id": "s500-21", "category": "Sport", "q": "Kolik minut trvá standardní fotbalový zápas bez prodloužení?", "a": "90 minut" },
   { "id": "s500-22", "category": "Sport", "q": "Kdo je nejmladší vítěz Tour de France v historii?", "a": "Tadej Pogačar" },
   { "id": "s500-23", "category": "Sport", "q": "Jaký je světový rekord v plavání na 100 m volným způsobem mužů (2023)?", "a": "46,86 s (César Cielo)" }
