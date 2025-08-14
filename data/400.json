@@ -119,29 +119,28 @@
   { "id": "h500-22", "category": "Hudba", "q": "Jaký hudební nástroj používá struny a smyčec a je menší než kontrabas?", "a": "Housle" },
   { "id": "h500-23", "category": "Hudba", "q": "Kdo složil operu „Don Giovanni“?", "a": "Wolfgang Amadeus Mozart" }
 
-  { "id": "f400-1", "category": "Film", "q": "Kdo ztvárnil roli Michaela Corleona ve filmové trilogii 'Kmotr'?", "a": "Al Pacino" },
-  { "id": "f400-2", "category": "Film", "q": "Jak se jmenuje slavný němý film Fritze Langa z roku 1927 zobrazující futuristické město?", "a": "Metropolis" },
-  { "id": "f400-3", "category": "Film", "q": "Který film získal Oscara za nejlepší film v roce 1984 a vypráví příběh o skladateli Mozartovi?", "a": "Amadeus" },
-  { "id": "f400-4", "category": "Film", "q": "Kdo režíroval trilogii 'Temný rytíř'?", "a": "Christopher Nolan" },
-  { "id": "f400-5", "category": "Film", "q": "Který film Akiry Kurosawy inspiroval western 'Sedm statečných'?", "a": "Sedm samurajů" },
-  { "id": "f400-6", "category": "Film", "q": "Kdo ztvárnil hlavní roli ve filmu 'Černá labuť'?", "a": "Natalie Portman" },
-  { "id": "f400-7", "category": "Film", "q": "Jak se jmenuje český film z roku 1966 inspirovaný románem Bohumila Hrabala, který získal Oscara?", "a": "Ostře sledované vlaky" },
-  { "id": "f400-8", "category": "Film", "q": "Jaký film je známý replikou 'Here's looking at you, kid'?", "a": "Casablanca" },
-  { "id": "f400-9", "category": "Film", "q": "Kdo hrál roli Andyho Dufresna ve filmu 'Vykoupení z věznice Shawshank'?", "a": "Tim Robbins" },
-  { "id": "f400-10", "category": "Film", "q": "Jak se jmenuje první celovečerní animovaný film studia Disney?", "a": "Sněhurka a sedm trpaslíků" },
-  { "id": "f400-11", "category": "Film", "q": "Který film Stanleyho Kubricka je známý svou psychedelickou vesmírnou scénou?", "a": "2001: Vesmírná odysea" },
-  { "id": "f400-12", "category": "Film", "q": "Jaký film získal Zlatou palmu v Cannes v roce 1994 a režíroval jej Quentin Tarantino?", "a": "Pulp Fiction" },
-  { "id": "f400-13", "category": "Film", "q": "Kdo ztvárnil Hannibala Lectera ve filmu 'Mlčení jehňátek'?", "a": "Anthony Hopkins" },
-  { "id": "f400-14", "category": "Film", "q": "Jak se jmenuje režisérka filmu 'Země nomádů', který získal Oscara v roce 2021?", "a": "Chloé Zhao" },
-  { "id": "f400-15", "category": "Film", "q": "Který film Alfreda Hitchcocka je známý slavnou sprchovou scénou?", "a": "Psycho" },
-  { "id": "f400-16", "category": "Film", "q": "Kdo hrál hlavní roli ve filmu 'Králova řeč'?", "a": "Colin Firth" },
-  { "id": "f400-17", "category": "Film", "q": "Jaký film Miloše Formana získal 5 Oscarů včetně nejlepšího filmu a režie v roce 1975?", "a": "Přelet nad kukaččím hnízdem" },
-  { "id": "f400-18", "category": "Film", "q": "Kdo režíroval film 'Blade Runner' (1982)?", "a": "Ridley Scott" },
-  { "id": "f400-19", "category": "Film", "q": "Jak se jmenuje režisér 'Kmotr II' a 'Apokalypsa'", "a": "Francis Ford Coppola" },
-  { "id": "f400-20", "category": "Film", "q": "Jaký film vypráví příběh o boxerovi Jakeu LaMottovi?", "a": "Zuřící býk" }
-
-
+  { "id": "f400-1", "category": "Filmy", "q": "Kdo ztvárnil roli Michaela Corleona ve filmové trilogii 'Kmotr'?", "a": "Al Pacino" },
+  { "id": "f400-2", "category": "Filmy", "q": "Jak se jmenuje slavný němý film Fritze Langa z roku 1927 zobrazující futuristické město?", "a": "Metropolis" },
+  { "id": "f400-3", "category": "Filmy", "q": "Který film získal Oscara za nejlepší film v roce 1984 a vypráví příběh o skladateli Mozartovi?", "a": "Amadeus" },
+  { "id": "f400-4", "category": "Filmy", "q": "Kdo režíroval trilogii 'Temný rytíř'?", "a": "Christopher Nolan" },
+  { "id": "f400-5", "category": "Filmy", "q": "Který film Akiry Kurosawy inspiroval western 'Sedm statečných'?", "a": "Sedm samurajů" },
+  { "id": "f400-6", "category": "Filmy", "q": "Kdo ztvárnil hlavní roli ve filmu 'Černá labuť'?", "a": "Natalie Portman" },
+  { "id": "f400-7", "category": "Filmy", "q": "Jak se jmenuje český film z roku 1966 inspirovaný románem Bohumila Hrabala, který získal Oscara?", "a": "Ostře sledované vlaky" },
+  { "id": "f400-8", "category": "Filmy", "q": "Jaký film je známý replikou 'Here's looking at you, kid'?", "a": "Casablanca" },
+  { "id": "f400-9", "category": "Filmy", "q": "Kdo hrál roli Andyho Dufresna ve filmu 'Vykoupení z věznice Shawshank'?", "a": "Tim Robbins" },
+  { "id": "f400-10", "category": "Filmy", "q": "Jak se jmenuje první celovečerní animovaný film studia Disney?", "a": "Sněhurka a sedm trpaslíků" },
+  { "id": "f400-11", "category": "Filmy", "q": "Který film Stanleyho Kubricka je známý svou psychedelickou vesmírnou scénou?", "a": "2001: Vesmírná odysea" },
+  { "id": "f400-12", "category": "Filmy", "q": "Jaký film získal Zlatou palmu v Cannes v roce 1994 a režíroval jej Quentin Tarantino?", "a": "Pulp Fiction" },
+  { "id": "f400-13", "category": "Filmy", "q": "Kdo ztvárnil Hannibala Lectera ve filmu 'Mlčení jehňátek'?", "a": "Anthony Hopkins" },
+  { "id": "f400-14", "category": "Filmy", "q": "Jak se jmenuje režisérka filmu 'Země nomádů', který získal Oscara v roce 2021?", "a": "Chloé Zhao" },
+  { "id": "f400-15", "category": "Filmy", "q": "Který film Alfreda Hitchcocka je známý slavnou sprchovou scénou?", "a": "Psycho" },
+  { "id": "f400-16", "category": "Filmy", "q": "Kdo hrál hlavní roli ve filmu 'Králova řeč'?", "a": "Colin Firth" },
+  { "id": "f400-17", "category": "Filmy", "q": "Jaký film Miloše Formana získal 5 Oscarů včetně nejlepšího filmu a režie v roce 1975?", "a": "Přelet nad kukaččím hnízdem" },
+  { "id": "f400-18", "category": "Filmy", "q": "Kdo režíroval film 'Blade Runner' (1982)?", "a": "Ridley Scott" },
+  { "id": "f400-19", "category": "Filmy", "q": "Jak se jmenuje režisér 'Kmotr II' a 'Apokalypsa'", "a": "Francis Ford Coppola" },
+  { "id": "f400-20", "category": "Filmy", "q": "Jaký film vypráví příběh o boxerovi Jakeu LaMottovi?", "a": "Zuřící býk" }
 ]
+
 
 
 
