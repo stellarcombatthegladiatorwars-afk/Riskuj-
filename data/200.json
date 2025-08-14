@@ -119,30 +119,31 @@
   { "id": "m200-22", "category": "Hudba", "q": "Kdo je přezdíván „král popu“?", "a": "Michael Jackson" },
   { "id": "m200-23", "category": "Hudba", "q": "Jaký hudební nástroj má struny a hraje se smyčcem (v orchestru nejmenší)?", "a": "Housle" },
 
-  { "id": "f200-1", "category": "Film", "q": "Kdo režíroval film 'E.T. – Mimozemšťan'?", "a": "Steven Spielberg" },
-  { "id": "f200-2", "category": "Film", "q": "Jak se jmenuje slavná píseň z filmu 'Titanic'?", "a": "My Heart Will Go On" },
-  { "id": "f200-3", "category": "Film", "q": "Kdo hrál hlavní roli v 'Gladiátorovi' (2000)?", "a": "Russell Crowe" },
-  { "id": "f200-4", "category": "Film", "q": "Jak se jmenuje planeta, na které se odehrává většina filmu 'Avatar'?", "a": "Pandora" },
-  { "id": "f200-5", "category": "Film", "q": "Který film získal Oscara za nejlepší film v roce 1994?", "a": "Forrest Gump" },
-  { "id": "f200-6", "category": "Film", "q": "Jak se jmenuje slavný režisér trilogie 'Pán prstenů'?", "a": "Peter Jackson" },
-  { "id": "f200-7", "category": "Film", "q": "Kdo ztvárnil roli Agenta Smitha ve filmu 'Matrix'?", "a": "Hugo Weaving" },
-  { "id": "f200-8", "category": "Film", "q": "Jak se jmenuje animovaný film o ztracené rybičce?", "a": "Hledá se Nemo" },
-  { "id": "f200-9", "category": "Film", "q": "Který film začíná slovy 'V dávných dobách, v předaleké galaxii...'?", "a": "Hvězdné války" },
-  { "id": "f200-10", "category": "Film", "q": "Kdo hraje hlavní roli v sérii 'John Wick'?", "a": "Keanu Reeves" },
-  { "id": "f200-11", "category": "Film", "q": "Jak se jmenuje kloboukatý archeolog z filmů Stevena Spielberga?", "a": "Indiana Jones" },
-  { "id": "f200-12", "category": "Film", "q": "Kdo režíroval film 'Pulp Fiction'?", "a": "Quentin Tarantino" },
-  { "id": "f200-13", "category": "Film", "q": "Jaký je český název filmu 'The Shawshank Redemption'?", "a": "Vykoupení z věznice Shawshank" },
-  { "id": "f200-14", "category": "Film", "q": "Kdo hrál roli Wolverina ve filmech X-Men?", "a": "Hugh Jackman" },
-  { "id": "f200-15", "category": "Film", "q": "Jak se jmenuje fiktivní škola ve filmu 'X-Men'?", "a": "Xavierova škola pro nadanou mládež" },
-  { "id": "f200-16", "category": "Film", "q": "Kdo hraje postavu Golluma v 'Pánu prstenů' (motion capture)?", "a": "Andy Serkis" },
-  { "id": "f200-17", "category": "Film", "q": "Který animovaný film vypráví příběh o rodině superhrdinů?", "a": "Úžasňákovi" },
-  { "id": "f200-18", "category": "Film", "q": "Jak se jmenuje princezna z 'Hvězdných válek'?", "a": "Leia Organa" },
-  { "id": "f200-19", "category": "Film", "q": "Kdo hrál roli Jamese Bonda ve filmu 'Skyfall'?", "a": "Daniel Craig" },
-  { "id": "f200-20", "category": "Film", "q": "Jak se jmenuje slavný italský film o malém chlapci a kině?", "a": "Bio Ráj (Cinema Paradiso)" }
+  { "id": "f200-1", "category": "Filmy", "q": "Kdo režíroval film 'E.T. – Mimozemšťan'?", "a": "Steven Spielberg" },
+  { "id": "f200-2", "category": "Filmy", "q": "Jak se jmenuje slavná píseň z filmu 'Titanic'?", "a": "My Heart Will Go On" },
+  { "id": "f200-3", "category": "Filmy", "q": "Kdo hrál hlavní roli v 'Gladiátorovi' (2000)?", "a": "Russell Crowe" },
+  { "id": "f200-4", "category": "Filmy", "q": "Jak se jmenuje planeta, na které se odehrává většina filmu 'Avatar'?", "a": "Pandora" },
+  { "id": "f200-5", "category": "Filmy", "q": "Který film získal Oscara za nejlepší film v roce 1994?", "a": "Forrest Gump" },
+  { "id": "f200-6", "category": "Filmy", "q": "Jak se jmenuje slavný režisér trilogie 'Pán prstenů'?", "a": "Peter Jackson" },
+  { "id": "f200-7", "category": "Filmy", "q": "Kdo ztvárnil roli Agenta Smitha ve filmu 'Matrix'?", "a": "Hugo Weaving" },
+  { "id": "f200-8", "category": "Filmy", "q": "Jak se jmenuje animovaný film o ztracené rybičce?", "a": "Hledá se Nemo" },
+  { "id": "f200-9", "category": "Filmy", "q": "Který film začíná slovy 'V dávných dobách, v předaleké galaxii...'?", "a": "Hvězdné války" },
+  { "id": "f200-10", "category": "Filmy", "q": "Kdo hraje hlavní roli v sérii 'John Wick'?", "a": "Keanu Reeves" },
+  { "id": "f200-11", "category": "Filmy", "q": "Jak se jmenuje kloboukatý archeolog z filmů Stevena Spielberga?", "a": "Indiana Jones" },
+  { "id": "f200-12", "category": "Filmy", "q": "Kdo režíroval film 'Pulp Fiction'?", "a": "Quentin Tarantino" },
+  { "id": "f200-13", "category": "Filmy", "q": "Jaký je český název filmu 'The Shawshank Redemption'?", "a": "Vykoupení z věznice Shawshank" },
+  { "id": "f200-14", "category": "Filmy", "q": "Kdo hrál roli Wolverina ve filmech X-Men?", "a": "Hugh Jackman" },
+  { "id": "f200-15", "category": "Filmy", "q": "Jak se jmenuje fiktivní škola ve filmu 'X-Men'?", "a": "Xavierova škola pro nadanou mládež" },
+  { "id": "f200-16", "category": "Filmy", "q": "Kdo hraje postavu Golluma v 'Pánu prstenů' (motion capture)?", "a": "Andy Serkis" },
+  { "id": "f200-17", "category": "Filmy", "q": "Který animovaný film vypráví příběh o rodině superhrdinů?", "a": "Úžasňákovi" },
+  { "id": "f200-18", "category": "Filmy", "q": "Jak se jmenuje princezna z 'Hvězdných válek'?", "a": "Leia Organa" },
+  { "id": "f200-19", "category": "Filmy", "q": "Kdo hrál roli Jamese Bonda ve filmu 'Skyfall'?", "a": "Daniel Craig" },
+  { "id": "f200-20", "category": "Filmy", "q": "Jak se jmenuje slavný italský film o malém chlapci a kině?", "a": "Bio Ráj (Cinema Paradiso)" }
   { "id": "f200-21", "category": "Filmy", "q": "Který český režisér natočil film „Amadeus“?", "a": "Miloš Forman" },
   { "id": "f200-22", "category": "Filmy", "q": "Oscarem oceněný film Miloše Formana z roku 1975?", "a": "Přelet nad kukaččím hnízdem" },
   { "id": "f200-23", "category": "Filmy", "q": "Jak se jmenuje čaroděj z filmové série o Harrym Potterovi, ředitel Bradavic?", "a": "Albus Brumbál (Dumbledore)" }
 
 ]
+
 
 
