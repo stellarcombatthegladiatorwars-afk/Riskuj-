@@ -18,7 +18,7 @@
   { "id": "h300-17", "category": "Historie", "q": "Jak se nazývala dohoda, která ukončila první světovou válku?", "a": "Versailleská smlouva" },
   { "id": "h300-18", "category": "Historie", "q": "Jak se jmenoval poslední ruský car?", "a": "Mikuláš II." },
   { "id": "h300-19", "category": "Historie", "q": "Kdo byl prvním člověkem, který přistál na Měsíci?", "a": "Neil Armstrong" },
-  { "id": "h300-20", "category": "Historie", "q": "Jak se nazývá období politického útlaku v Československu po roce 1948?", "a": "Komunistická totalita" }
+  { "id": "h300-20", "category": "Historie", "q": "Jak se nazývá období politického útlaku v Československu po roce 1948?", "a": "Komunistická totalita" },
   { "id": "h300-21", "category": "Historie", "q": "Listina z roku 1212 potvrzující dědičné právo českých králů?", "a": "Zlatá bula sicilská" },
   { "id": "h300-22", "category": "Historie", "q": "Které století je spojeno s husitskými válkami?", "a": "15. století" },
   { "id": "h300-23", "category": "Historie", "q": "Který panovník byl zvaný „Otec vlasti“?", "a": "Karel IV." },
@@ -67,7 +67,7 @@
   { "id": "l300-17", "category": "Literatura", "q": "Jak se jmenuje spisovatelka, která vytvořila postavu Anne Shirleyové z románu „Anne z Green Gables“?", "a": "Lucy Maud Montgomeryová" },
   { "id": "l300-18", "category": "Literatura", "q": "Jak se jmenuje slavná ruská básnická epopej Alexandra Sergejeviče Puškina?", "a": "Evžen Oněgin" },
   { "id": "l300-19", "category": "Literatura", "q": "Kdo napsal román „Na západní frontě klid“?", "a": "Erich Maria Remarque" },
-  { "id": "l300-20", "category": "Literatura", "q": "Jak se jmenuje francouzský autor, který napsal „Hrbáče z Notre-Dame“?", "a": "Victor Hugo" }
+  { "id": "l300-20", "category": "Literatura", "q": "Jak se jmenuje francouzský autor, který napsal „Hrbáče z Notre-Dame“?", "a": "Victor Hugo" },
   { "id": "l300-21", "category": "Literatura", "q": "Kdo napsal román „Proces“?", "a": "Franz Kafka" },
   { "id": "l300-22", "category": "Literatura", "q": "Nobelova cena za literaturu 1984 (český autor)?", "a": "Jaroslav Seifert" },
   { "id": "l300-23", "category": "Literatura", "q": "Autor „Písní kosmických“?", "a": "Jan Neruda" },
@@ -139,11 +139,12 @@
   { "id": "f300-17", "category": "Filmy", "q": "Který animovaný film získal Oscara v roce 2001, kdy byla tato kategorie poprvé udělena?", "a": "Shrek" },
   { "id": "f300-18", "category": "Filmy", "q": "Kdo hrál roli Tonyho Starka/Iron Mana?", "a": "Robert Downey Jr." },
   { "id": "f300-19", "category": "Filmy", "q": "Který český režisér natočil film 'Tmavomodrý svět'?", "a": "Jan Svěrák" },
-  { "id": "f300-20", "category": "Filmy", "q": "Jak se jmenuje filmová série s agentem Ethanem Huntem?", "a": "Mission: Impossible" }
+  { "id": "f300-20", "category": "Filmy", "q": "Jak se jmenuje filmová série s agentem Ethanem Huntem?", "a": "Mission: Impossible" },
   { "id": "f300-21", "category": "Filmy", "q": "Kdo režíroval film „Pelíšky“?", "a": "Jan Hřebejk" },
   { "id": "f300-22", "category": "Filmy", "q": "Jak se jmenuje trilogie Petera Jacksona podle Tolkiena z počátku 21. století?", "a": "Pán prstenů" },
   { "id": "f300-23", "category": "Filmy", "q": "Ve kterém roce vyšel původní film „Matrix“?", "a": "1999" }
 ]
+
 
 
 
