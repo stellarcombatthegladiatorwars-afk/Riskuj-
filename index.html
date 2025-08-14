@@ -1,0 +1,71 @@
+<!-- *Zelenou kurzívou: index.html pro hru Riskuj s načítáním JSON otázek* -->
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Riskuj!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 { color: gold; }
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Riskuj!</h1>
+  <p>Vyber si hodnotu otázky:</p>
+  <div id="buttons"></div>
+
+  <h2 id="question-title"></h2>
+  <p id="question-text"></p>
+
+  <script>
+    // *Zelenou kurzívou: Hodnoty otázek dostupných ve složce data/*
+    const values = [100, 200, 300, 400, 500];
+    const btnContainer = document.getElementById('buttons');
+    const qTitle = document.getElementById('question-title');
+    const qText = document.getElementById('question-text');
+
+    // *Zelenou kurzívou: Vytvoření tlačítek pro načítání otázek*
+    values.forEach(val => {
+      const btn = document.createElement('button');
+      btn.textContent = val;
+      btn.onclick = () => loadQuestion(val);
+      btnContainer.appendChild(btn);
+    });
+
+    // *Zelenou kurzívou: Funkce pro načtení JSON podle hodnoty*
+    function loadQuestion(value) {
+      fetch(`./data/${value}.json?v=${Date.now()}`) // cache-busting param
+        .then(res => {
+          if (!res.ok) throw new Error(`Chyba načítání: ${res.status}`);
+          return res.json();
+        })
+        .then(data => {
+          // *Zelenou kurzívou: pro ukázku bereme první otázku v poli*
+          const question = data[0];
+          qTitle.textContent = `Otázka za ${value}`;
+          qText.textContent = question.text || 'Chybí text otázky';
+        })
+        .catch(err => {
+          console.error(err);
+          qTitle.textContent = 'Chyba při načítání';
+          qText.textContent = '';
+        });
+    }
+  </script>
+
+</body>
+</html>
