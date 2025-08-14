@@ -117,7 +117,7 @@
   { "id": "m500-20", "category": "Hudba", "q": "Kdo složil operu „La Traviata“?", "a": "Giuseppe Verdi" },
   { "id": "m500-21", "category": "Hudba", "q": "Kdo složil skladbu „Bolero“?", "a": "Maurice Ravel" },
   { "id": "m500-22", "category": "Hudba", "q": "Kdo složil operu „Tosca“?", "a": "Giacomo Puccini" },
-  { "id": "m500-23", "category": "Hudba", "q": "Kdo složil skladbu „Moldau“?", "a": "Bedřich Smetana" }
+  { "id": "m500-23", "category": "Hudba", "q": "Kdo složil skladbu „Moldau“?", "a": "Bedřich Smetana" },
 
   { "id": "f500-1", "category": "Film", "q": "Jak se jmenuje kameraman, který spolupracoval s Terrencem Malickem na filmech jako 'Strom života'?", "a": "Emmanuel Lubezki" },
   { "id": "f500-2", "category": "Film", "q": "Který film Ingmara Bergmana z roku 1957 zobrazuje rytíře hrajícího šachy se Smrtí?", "a": "Sedmá pečeť" },
@@ -142,7 +142,7 @@
   { "id": "s500-21", "category": "Sport", "q": "Kolik minut trvá standardní fotbalový zápas bez prodloužení?", "a": "90 minut" },
   { "id": "s500-22", "category": "Sport", "q": "Kdo je nejmladší vítěz Tour de France v historii?", "a": "Tadej Pogačar" },
   { "id": "s500-23", "category": "Sport", "q": "Jaký je světový rekord v plavání na 100 m volným způsobem mužů (2023)?", "a": "46,86 s (César Cielo)" }
-  
 ]
+
 
 
