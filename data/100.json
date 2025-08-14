@@ -1,5 +1,5 @@
 [
-  [
+  
   { "id": "h100-1", "category": "Historie", "q": "Kdo byl prvním prezidentem Československa?", "a": "Tomáš Garrigue Masaryk" },
   { "id": "h100-2", "category": "Historie", "q": "Ve kterém roce začala druhá světová válka?", "a": "1939" },
   { "id": "h100-3", "category": "Historie", "q": "Jak se jmenoval první český král korunovaný roku 1085?", "a": "Vratislav II." },
@@ -95,7 +95,7 @@
   { "id": "m100-9", "category": "Hudba", "q": "Jak se jmenuje hudební soutěž v Euroopě, kde soutěží země s písněmi?", "a": "Eurovision Song Contest (Eurovize)" },
   { "id": "m100-10", "category": "Hudba", "q": "Jak se jmenuje český slavík mnohonásobný držitel ankety?", "a": "Karel Gott" },
   { "id": "m100-11", "category": "Hudba", "q": "Jak se jmenuje dechový nástroj z mosazi se třemi písty?", "a":
-    { "id": "m100-11", "category": "Hudba", "q": "Jak se jmenuje dechový nástroj z mosazi se třemi písty?", "a": "Trumpeta" },
+  { "id": "m100-11", "category": "Hudba", "q": "Jak se jmenuje dechový nástroj z mosazi se třemi písty?", "a": "Trumpeta" },
   { "id": "m100-12", "category": "Hudba", "q": "Jak se jmenuje nejvyšší ženský hlas?", "a": "Soprán" },
   { "id": "m100-13", "category": "Hudba", "q": "Jaký hudební nástroj má struny a kladívka, která na ně udeří při stisknutí klávesy?", "a": "Klavír" },
   { "id": "m100-14", "category": "Hudba", "q": "Kdo je autorem skladby „Für Elise“?", "a": "Ludwig van Beethoven" },
@@ -127,3 +127,4 @@
   { "id": "s100-19", "category": "Sport", "q": "Kdo je český hokejista známý pro svou dlouhou kariéru v NHL a číslo 68?", "a": "Jaromír Jágr" },
   { "id": "s100-20", "category": "Sport", "q": "Jaký sport se hraje s košem a míčem a cílem je střílet koše?", "a": "Basketbal" }
 ]
+
